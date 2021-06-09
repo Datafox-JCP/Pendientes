@@ -86,8 +86,8 @@ struct ContentView: View {
                             .foregroundColor(.red)
                             .shadow(radius: radioSombra, x: xOffset, y: yOffset)
                         }
-                        .padding(.trailing, 10)
-                        .padding(.bottom, 10)
+                        .padding(.trailing, 16)
+                        .padding(.bottom, 16)
                     } //: VStack
                 }
                 //: Para ocultar el botón
@@ -103,7 +103,6 @@ struct ContentView: View {
                 }
             } //: ZStack
             .navigationTitle("Pendientes")
-            .ignoresSafeArea(edges: .bottom)
             .toolbar {
                 ToolbarItem {
                     Button(action: { mostrarSettings = true }) {
